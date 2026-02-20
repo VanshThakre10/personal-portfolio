@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Zap, Users, Award } from 'lucide-react';
+import profileImage from '../../public/vansh.jpg';
 
 const Trait = ({ icon: Icon, title, description, delay }) => (
     <motion.div
@@ -47,7 +48,7 @@ const About = () => {
                             {/* Placeholder for Developer Photo */}
                             <div className="absolute inset-0 bg-brand-surface flex items-center justify-center bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-primary/20 via-brand-surface to-brand-background">
                                 {/* <Users size={64} className="text-brand-border opacity-50" /> */}
-                                <img src="./vansh.jpg" alt="vansh photo" width={"100%"} height={"100%"} />
+                                <img src={profileImage} alt="vansh photo" width={"100%"} height={"100%"} />
                             </div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
                                 <p className="text-white font-mono text-sm">based in</p>
