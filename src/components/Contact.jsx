@@ -18,9 +18,8 @@ const Contact = () => {
     };
 
     const socialLinks = [
-        { icon: Github, href: "#", color: "hover:text-white" },
-        { icon: Linkedin, href: "#", color: "hover:text-[#0077B5]" },
-        { icon: Facebook, href: "#", color: "hover:text-[#1DA1F2]" },
+        { icon: Github, href: "https://github.com/VanshThakre10", color: "hover:text-white" },
+        { icon: Linkedin, href: "https://www.linkedin.com/in/vansh-thakre-0ab773262", color: "hover:text-[#0077B5]" },
     ];
 
     return (
@@ -56,6 +55,7 @@ const Contact = () => {
                                         <motion.a
                                             key={idx}
                                             href={social.href}
+                                            target="_blank"
                                             whileHover={{ y: -4 }}
                                             className={`text-gray-500 transition-colors ${social.color}`}
                                         >

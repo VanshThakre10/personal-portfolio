@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Mail, ChevronDown } from 'lucide-react';
+import { Download, Mail, ChevronDown } from 'lucide-react';
 
 const CodeSnippet = ({ code, className, delay }) => (
     <motion.div
@@ -86,16 +86,20 @@ const Hero = () => {
                     transition={{ delay: 3, duration: 0.5 }}
                     className="flex flex-col sm:flex-row gap-4 justify-center items-center"
                 >
-                    <button className="group relative px-8 py-3 bg-brand-cta text-white font-semibold rounded-lg overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(99,102,241,0.5)]">
+                    <a
+                        href="/Vansh.pdf"
+                        download
+                        className="group relative px-8 py-3 bg-brand-cta text-white font-semibold rounded-lg overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(99,102,241,0.5)] flex items-center justify-center"
+                    >
                         <span className="relative z-10 flex items-center gap-2">
-                            View Projects <ArrowRight size={20} />
+                            Download Resume <Download size={20} />
                         </span>
                         <div className="absolute inset-0 bg-brand-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    </button>
+                    </a>
 
-                    <button className="px-8 py-3 border border-brand-border text-white font-semibold rounded-lg hover:bg-brand-surface transition-all hover:border-brand-primary flex items-center gap-2">
+                    <a href="mailto:thakrevansh833@gmail.com" className="px-8 py-3 border border-brand-border text-white font-semibold rounded-lg hover:bg-brand-surface transition-all hover:border-brand-primary flex items-center gap-2">
                         Contact Me <Mail size={20} />
-                    </button>
+                    </a>
                 </motion.div>
             </div>
 
